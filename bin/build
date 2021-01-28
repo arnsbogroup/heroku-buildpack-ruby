@@ -11,6 +11,7 @@ BUILDPACK_DIR=$(dirname $BIN_DIR)
 echo "Setting STACK to: $CNB_STACK_ID"
 
 # legacy buildpack uses $STACK 
+export $CNB_STACK_ID=heroku-16
 export STACK=$CNB_STACK_ID
 
 source "$BIN_DIR/support/bash_functions.sh"
